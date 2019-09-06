@@ -1,0 +1,18 @@
+<mvc:View controllerName="TV.Timesheet_Visulization.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:l="sap.ui.layout" xmlns:u="sap.ui.unified">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<l:VerticalLayout>
+							<u:FileUploader id="fileUploader" name="myFileUpload" uploadUrl="upload/" tooltip="Upload your file to the server"
+								uploadComplete="handleUploadComplete" change="onChangeFUP"/>
+							<Button text="Upload File" press="handleUploadPress"/>
+						</l:VerticalLayout>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
